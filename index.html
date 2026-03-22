@@ -4,104 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mob-Lab | 個人開発スタジオ</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --bg: #fafafa;
-      --fg: #1a1a1a;
-      --muted: #6b6b6b;
-      --border: #e0e0e0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.7;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    main {
-      flex: 1;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 4rem 1.5rem 6rem;
-    }
-
-    header {
-      padding: 2.5rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-decoration: none;
-      color: var(--fg);
-    }
-
-    .logo:hover {
-      opacity: 0.7;
-    }
-
-    section {
-      padding: 2.5rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    section:last-of-type {
-      border-bottom: none;
-    }
-
-    h2 {
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 1.25rem;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    li {
-      padding: 0.5rem 0;
-    }
-
-    a {
-      color: var(--fg);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s, opacity 0.2s;
-    }
-
-    a:hover {
-      border-bottom-color: var(--fg);
-    }
-
-    .muted {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    footer {
-      padding: 2rem 1.5rem;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.8rem;
-      border-top: 1px solid var(--border);
-    }
-  </style>
+  <link rel="stylesheet" href="design.css">
 </head>
 <body>
 
@@ -114,8 +17,7 @@
       <h2>Apps</h2>
       <ul>
         <li>
-          <a href="#">タイピングアプリ</a>
-          <span class="muted">（準備中）</span>
+          <a href="#" class="item-link">タイピングアプリ <span>（準備中）</span></a>
         </li>
       </ul>
     </section>
@@ -123,7 +25,9 @@
     <section>
       <h2>Links</h2>
       <ul>
-        <li><a href="https://note.com/fancy_fish7037" target="_blank" rel="noopener noreferrer">note</a></li>
+        <li>
+          <a href="https://note.com/fancy_fish7037" target="_blank" rel="noopener noreferrer" class="item-link">note</a>
+        </li>
       </ul>
     </section>
   </main>
