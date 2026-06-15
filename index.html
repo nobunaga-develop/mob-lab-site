@@ -1,45 +1,82 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mob-Lab | 個人開発スタジオ</title>
-  <link rel="stylesheet" href="design.css">
+<html lang="ja"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mob-Lab | 個人開発スタジオ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+
+<link rel="stylesheet" href="design.css">
 </head>
 <body>
+  <main class="win">
+    <div class="winbar">
+      <span class="lamp"></span><span class="lamp"></span><span class="lamp g"></span>
+      <span class="path">~/mob-lab</span>
+      <span class="spacer"></span>
+      <span class="meta">個人開発スタジオ</span>
+    </div>
 
-  <main>
-    <header>
-      <a href="/" class="logo">Mob-Lab</a>
-    </header>
+    <div class="body">
+      <div class="ghost" aria-hidden="true">{ }</div>
 
-    <section>
-      <h2>Apps</h2>
-      <ul>
-        <li>
-          <a href="https://retype-liard.vercel.app/" class="item-link">Retype</a>
-        </li>
-        <li>
-          <a href="https://study-grass.vercel.app/" class="item-link">Study Grass</a>
-        </li>
-      </ul>
-    </section>
+      <div class="prompt fade" style="animation-delay:.02s">
+        <span class="usr">guest@mob-lab</span>:~$ whoami<span class="cur"></span>
+      </div>
+      <h1 class="fade" style="animation-delay:.06s">Mob-Lab</h1>
+      <p class="sub fade" style="animation-delay:.1s">
+        個人開発スタジオ。つくったアプリを、ここに並べています。ひとつずつ、ていねいに育てています。
+      </p>
 
-    <section>
-      <h2>Links</h2>
-      <ul>
-        <li>
-          <a href="https://note.com/fancy_fish7037" target="_blank" rel="noopener noreferrer" class="item-link">note</a>
-        </li>
-      </ul>
-    </section>
+      <section class="apps">
+        <div class="comment fade" style="animation-delay:.16s">// apps —— 公開中のプロダクト</div>
+        <div class="entries">
+
+          <a class="entry fade" href="https://retype-liard.vercel.app/" target="_blank" rel="noreferrer" style="animation-delay:.2s">
+            <span class="ln">01</span>
+            <span class="shot"><img src="images/b780a524-6116-4793-bbf7-f03bf35d0384.webp" alt="Retype の画面" style="width:144px;height:90px;object-fit:cover;display:block"></span>
+            <span class="e-col">
+              <span class="e-name">Retype<span class="tag">Web App</span></span>
+              <span class="e-desc">正確さとスピードを鍛える、ブラウザ完結のタイピング練習アプリ。</span>
+              <span class="e-url">retype-liard.vercel.app</span>
+            </span>
+            <span class="go">→</span>
+          </a>
+
+          <a class="entry fade" href="https://study-grass.vercel.app/" target="_blank" rel="noreferrer" style="animation-delay:.26s">
+            <span class="ln">02</span>
+            <span class="shot"><img src="images/6b9f668a-9548-4d6f-b378-d7c2ac8a99dc.webp" alt="Study Grass の画面" style="width:144px;height:90px;object-fit:cover;display:block"></span>
+            <span class="e-col">
+              <span class="e-name">Study Grass<span class="tag">Web App</span></span>
+              <span class="e-desc">学習時間を“草”で可視化。続けるほど画面が緑に染まっていく記録アプリ。</span>
+              <span class="e-url">study-grass.vercel.app</span>
+            </span>
+            <span class="go">→</span>
+          </a>
+
+        </div>
+      </section>
+
+      <section class="links">
+        <div class="comment fade" style="animation-delay:.32s">// links —— その他</div>
+        <div class="links-row fade" style="animation-delay:.36s">
+          <a class="chip" href="https://note.com/fancy_fish7037" target="_blank" rel="noreferrer">
+            note<span class="c-url">note.com/fancy_fish7037</span><span class="c-arrow">↗</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="statusbar">
+      <span class="sb-l"><span class="sb-dot">●</span> main<span>UTF-8</span><span>2 apps</span></span>
+      <span>© Mob-Lab 2026</span>
+    </div>
   </main>
 
-  <footer>
-    <small>© Mob-Lab</small>
-  </footer>
+  
+
+
 
   <script defer src="/_vercel/insights/script.js"></script>
-
-</body>
-</html>
+</body></html>
