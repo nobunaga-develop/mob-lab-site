@@ -4938,7 +4938,7 @@
 
   /* ===== responsive ===== */
   @media (max-width:720px){
-    body{padding:0;align-items:stretch;}
+    body{padding:0;align-items:flex-start;}
     .win{max-width:none;min-height:100vh;border:0;border-radius:0;box-shadow:none;}
     .body{padding:32px 24px 26px;}
     .ghost{font-size:84px;top:22px;right:18px;}
